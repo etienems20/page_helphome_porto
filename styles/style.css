@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@600&family=Libre+Baskerville:wght@700&family=Mooli&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-1: #082E55;
+    --cor-2: #F58634;
+    --cor-3: #000000;
+
+    --cor-hover: #cacccf;
+    --fonte-1: 'Libre Baskerville', sans-serif;
+    --fonte-2: 'Mooli', sans-serif;
+}
+
+body {
+    /* height: 100vg; */
+    background-color: rgb(245, 244, 243);
+    box-sizing: border-box;
+    color: var(--cor-1);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    color: var(--cor-1);
+    font-family: var(--fonte-1);
+    font-size: 1.062rem;
+    font-weight: 600px;
+    text-decoration: none;
+}
+
+.apresentacao {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding: 4% 10%;
+}
+
+.apresentacao__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: var(--fonte-1);
+    font-size: 2.19rem;
+}
+
+.titulo-destaque {
+    color: var(--cor-2);
+}
+
+.apresentacao__conteudo__titulo__texto {
+    font-family: var(--fonte-2);
+    font-size: 1.25rem;
+}
+
+.apresentacao__links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-1);
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.apresentacao__links__navegacao {
+    align-items: center;
+    border: 2px solid var(--cor-2); 
+    border-radius: 10px;
+    color: var(--cor-3);
+    display: flex;
+    font-family: var(--fonte-2);
+    font-size: 0.94rem;
+    font-weight: 600;
+    gap: 15px;
+    height: 15px;
+    justify-content: center;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+}
+
+.apresentacao__links__navegacao:hover{
+    background: var(--cor-hover);
+    padding: 2%;
+    transition: 1s;
+}
+
+.icone{
+    width: 25px;
+}
+
+.apresentacao__imagem{
+    height: 400px;
+    width: 400px;
+}
+
+.rodape{
+    background: var(--cor-2);
+    color: white;
+    font-size: 1.25rem;
+    font-family: var();
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
